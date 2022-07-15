@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datetime Generator</title>
+</head>
+<div class="dark-bg-custom">
+    <center>
+        <img style="padding: 20px;" src="{% static 'assets/img/clock.jpg'%}" width="40%" height="20%">
+        <br/>
+        <a class="btn btn-primary btn-lg" href="{% url 'datetime_gen' %}" role="button">Generate a new Date</a><br><br>
+            <br/>
+            <br/>
+            <h3 class="text-light"> {{ data }}</h3>
+    </center>
+</div>
+
+
+</html>
+{% endblock %}

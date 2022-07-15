@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Generator</title>
+</head>
+<body>
+<div class="dark-bg-custom" style="position:fixed; height:100%">
+<div style=" display: flex;
+  justify-content: center;
+  align-items: center;">
+<audio controls style="width:50%">
+    <source src="{% static 'temp/final.wav'%}" type="audio/wav">
+</audio>
+    <br>
+</div>
+</div>
+</body>
+</html>
+{% endblock %}
